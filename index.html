@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte e Sustentável</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9f6;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1e4620; /* Verde escuro institucional */
+            color: #ffffff;
+            padding: 20px 0;
+            border-bottom: 4px solid #d4af37; /* Detalhe em ouro/colheita */
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #85bb65; /* Verde claro sustentável */
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Seção Hero (Destaque Principal) */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #edf4ec;
+            border-bottom: 1px solid #e0ebd9;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: #1e4620;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+
+        /* Seção de Pilares (Cards) */
+        .pilares {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #1e4620;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #d4af37;
+            margin: 10px auto 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e7d32;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1e4620;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #112211;
+            color: #b0bec5;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Agro<span>Forte</span></h1>
+            </div>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#sobre">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>O Futuro Alimentado pela Sustentabilidade</h2>
+            <p>Unimos a força do campo à preservação do planeta. Produzir mais, com mais eficiência, protegendo os recursos naturais para as próximas gerações.
+            </p>
+            <a href="#pilares" class="btn">Conheça Nossas Práticas</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares">
+        <div class="container">
+            <h2 class="section-title">Nosso Compromisso</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Tecnologia de Precisão</h3>
+                    <p>Utilização de inteligência artificial apresenta dados para otimizar o uso de água, insumos e energia, reduzindo o impacto ambiental.
+                        <strong>Climate FieldView (da Bayer)</strong>: Uma das plataformas mais utilizadas no mundo. Sua IA cruza dados de satélite, maquinário e solo para gerar mapas de prescrição. Ela diz exatamente onde e quanto de insumo (fertilizante/semente) aplicar, evitando o desperdício.
+
+<strong>xarvio® Digital Farming Solutions (da BASF)</strong>: Utiliza IA e visão computacional para identificar plantas daninhas e doenças por fotos. Com isso, o maquinário aplica defensivos agrícolas de forma localizada (apenas na planta doente), reduzindo o uso de químicos em até 90%.
+                        O agro forte e sustentável prova que é possível alimentar o mundo e impulsionar a economia enquanto se protege o planeta. É a ciência e o respeito à terra trabalhando juntos para transformar a produção de alimentos em um sinônimo de preservação e futuro.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Preservação Ativa</h3>
+                    <p>Práticas de manejo inteligente do solo, rotação de culturas e conservação de nascentes que mantêm a biodiversidade viva e o solo fértil.
+                        O agro forte e sustentável, aliado à preservação ativa, quebra o velho mito de que a produção e o meio ambiente são inimigos. Ele prova que o campo pode ser um motor de riqueza e inovação tecnológica e, ao mesmo tempo, a maior ferramenta de conservação ambiental que o planeta possui. É a ciência e o respeito à terra trabalhando juntos para nutrir o presente e garantir o amanhã.
+                        O agro forte e sustentável, aliado à preservação ativa, quebra o velho mito de que a produção e o meio ambiente são inimigos. Ele prova que o campo pode ser um motor de riqueza e inovação tecnológica e, ao mesmo tempo, a maior ferramenta de conservação ambiental que o planeta possui. É a ciência e o respeito à terra trabalhando juntos para nutrir o presente e garantir o amanhã.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>Integração de fontes renováveis, como energia solar e biomassa, transformando subprodutos do campo em potência para a própria produção.
+                        O Agro Forte e Sustentável é a base para o desenvolvimento econômico e a segurança alimentar do planeta. No entanto, a grande virada do setor no século XXI está na sua transformação em um dos maiores motores de energia limpa e renovável do mundo. A união entre a alta produtividade no campo e a matriz energética sustentável prova que o agronegócio é parte central da solução para a crise climática global.
+                        O agro forte e sustentável, impulsionado pela energia limpa, redefine o papel do produtor rural. O campo não é apenas o lugar de onde vem o nosso alimento, mas também o berço da energia que move o futuro com responsabilidade, eficiência e respeito ao planeta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroForte Sustentável. Todos os direitos reservados.</p>
+            <p>Produzindo com responsabilidade para nutrir o mundo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
